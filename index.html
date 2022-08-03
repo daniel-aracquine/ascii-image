@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ASCII-Painting</title>
+		<style>
+      body {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+      div {
+        display: inline-block;
+        justify-content: center;
+        margin: 10px;
+      }
+      section {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* justify-content: center; */
+        align-items: center;
+      }
+		</style>
+  </head>
+  <body>
+
+    <section>
+      <div>
+        <h1>
+          Convert images to ascii painting.
+        </h1>
+        <br>
+        <input type="file" id="image-input" accept="image/jpeg, image/png, imange/jpg">
+        <br>
+        (jpg, jpeg, png only)
+      </div>
+      <div>
+          <canvas id="canvas"></canvas>
+      </div>
+      <div>
+        Made By Sarthak
+      </div>
+      <div>
+          <canvas id="canvas2"></canvas>
+      </div>
+    </section>
+
+    
+	<script src="index.js"></script>
+  </body>
+</html>
